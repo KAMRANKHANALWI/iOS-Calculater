@@ -1,86 +1,79 @@
-* {
-    padding: 0;
+body, html {
     margin: 0;
-}
-
-html, body #fullheight {
-    min-height: 100% !important;
+    padding: 0;
+    width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
     background-color: black;
 }
 
-.container {
-    height: 100%;
-    background-color: black;
-}
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    width: 100%;
+    height: 20%;
+} 
+
 
 .result {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    font-size: 45px;
     color: white;
-    height: 39%;
-}
-
-.result span {
-    margin-right: 60px;
-    font-size: 150px;
-    justify-self: flex-end;
+    width: 90%;
+    height: 18%;
+    font-size: 63px;
 }
 
 .buttons {
-    width: 100%;
-    height: 60%;
-    background-color: black;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    border-top: 1px solid rgba(0, 0, 0, 0.184);
+    width: 90%;
+    height: 70%;
+    background-color: black;
+
 }
 
-.item {
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    border-radius: 50%;
+    font-size: 40px;
+    width: 83px;
+    height: 83px;
     color: white;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    cursor: pointer;
-    align-self: center;
+    background-color: #343434;
     justify-self: center;
+    cursor: auto;
 }
 
-.percent {
-    background-color: #a5a5a5;
-    border: none;
-    color: black;
-}
-
-.item1 {
-    background-color: #a5a5a5;
-    border: none;
-}
-
-.item3 {
+.yellowText {
     background-color: #ff9f0a;
-    border: none;
+    color: white;
 }
 
-.numbers, .comma {
-    background-color: #343434;
-    border: none;
-}
-
-.negative, .clear {
+.greyText {
+    background-color: #a5a5a5;
     color: black;
 }
 
-.itemZero {
-    background-color: #343434;
-    width: 200px;
+.zeroBtn {
+    width: 180px;
     border-radius: 50px;
-    grid-column: span 2;
-    border: none;
+    grid-column: span 2;   
 }
